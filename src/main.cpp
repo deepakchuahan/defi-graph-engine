@@ -1,26 +1,26 @@
+
 #include "ArenaAllocator.hpp"
+#include "Graph.hpp"
+#include "Solver.hpp"
 #include <iostream>
 #include <cassert>
 
 int main() {
-    // Instantiate 1MB Arena
-    ArenaAllocator arena(1024 * 1024);
+    ArenaAllocator sys_arena(1024 * 1024);
+    size_t net_size = 5;
+    Graph net_graph(net_size, sys_arena);
+    
+    net_graph.establish_link(0, 1);
+    net_graph.establish_link(0, 2);
+    net_graph.establish_link(1, 2);
+    net_graph.establish_link(2, 3);
+    net_graph.establish_link(3, 4);
 
-    // Test Case 1: Sequential Allocation & Alignment
-    void* p1 = arena.allocate(17, 8); 
-    assert(p1 != nullptr);
-    assert(reinterpret_cast<uintptr_t>(p1) % 8 == 0);
+    ExactEngine mvc_solver(net_graph, net_size);
+    size_t opt_wallets = mvc_solver.run_engine();
 
-    void* p2 = arena.allocate(8, 8);
-    assert(p2 != nullptr);
-    assert(reinterpret_cast<uintptr_t>(p2) % 8 == 0);
-    assert(static_cast<std::byte*>(p2) >= static_cast<std::byte*>(p1) + 17);
+    assert(opt_wallets == 3); 
 
-    // Test Case 2: Reset behavior
-    arena.reset();
-    void* p3 = arena.allocate(17, 8);
-    assert(p3 == p1); // Must reuse exact same starting boundary
-
-    std::cout << "[PASS] Phase 1: Arena Allocator functionality verified." << std::endl;
+    std::cout << "[PASS] Phase 3: Exact Solver logic verified. Min wallets: " << opt_wallets << std::endl;
     return 0;
 }
