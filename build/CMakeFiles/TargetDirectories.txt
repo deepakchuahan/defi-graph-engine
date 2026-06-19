@@ -1,3 +1,0 @@
-/home/deepak/projects/defi-graph-engine/build/CMakeFiles/graph_engine.dir
-/home/deepak/projects/defi-graph-engine/build/CMakeFiles/edit_cache.dir
-/home/deepak/projects/defi-graph-engine/build/CMakeFiles/rebuild_cache.dir
