@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/deepak/projects/defi-graph-engine/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
