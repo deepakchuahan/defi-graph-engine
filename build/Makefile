@@ -153,6 +153,54 @@ src/ArenaAllocator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_engine.dir/build.make CMakeFiles/graph_engine.dir/src/ArenaAllocator.cpp.s
 .PHONY : src/ArenaAllocator.cpp.s
 
+src/Graph.o: src/Graph.cpp.o
+.PHONY : src/Graph.o
+
+# target to build an object file
+src/Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_engine.dir/build.make CMakeFiles/graph_engine.dir/src/Graph.cpp.o
+.PHONY : src/Graph.cpp.o
+
+src/Graph.i: src/Graph.cpp.i
+.PHONY : src/Graph.i
+
+# target to preprocess a source file
+src/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_engine.dir/build.make CMakeFiles/graph_engine.dir/src/Graph.cpp.i
+.PHONY : src/Graph.cpp.i
+
+src/Graph.s: src/Graph.cpp.s
+.PHONY : src/Graph.s
+
+# target to generate assembly for a file
+src/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_engine.dir/build.make CMakeFiles/graph_engine.dir/src/Graph.cpp.s
+.PHONY : src/Graph.cpp.s
+
+src/Solver.o: src/Solver.cpp.o
+.PHONY : src/Solver.o
+
+# target to build an object file
+src/Solver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_engine.dir/build.make CMakeFiles/graph_engine.dir/src/Solver.cpp.o
+.PHONY : src/Solver.cpp.o
+
+src/Solver.i: src/Solver.cpp.i
+.PHONY : src/Solver.i
+
+# target to preprocess a source file
+src/Solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_engine.dir/build.make CMakeFiles/graph_engine.dir/src/Solver.cpp.i
+.PHONY : src/Solver.cpp.i
+
+src/Solver.s: src/Solver.cpp.s
+.PHONY : src/Solver.s
+
+# target to generate assembly for a file
+src/Solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_engine.dir/build.make CMakeFiles/graph_engine.dir/src/Solver.cpp.s
+.PHONY : src/Solver.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -189,6 +237,12 @@ help:
 	@echo "... src/ArenaAllocator.o"
 	@echo "... src/ArenaAllocator.i"
 	@echo "... src/ArenaAllocator.s"
+	@echo "... src/Graph.o"
+	@echo "... src/Graph.i"
+	@echo "... src/Graph.s"
+	@echo "... src/Solver.o"
+	@echo "... src/Solver.i"
+	@echo "... src/Solver.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
