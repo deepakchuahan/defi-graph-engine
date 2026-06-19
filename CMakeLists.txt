@@ -9,4 +9,4 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -march=native -flto")
 
 include_directories(include)
 
-add_executable(graph_engine src/main.cpp src/ArenaAllocator.cpp src/Graph.cpp src/Solver.cpp)
+add_executable(graph_engine src/main.cpp src/ArenaAllocator.cpp src/Graph.cpp src/Solver.cpp src/Parser.cpp)

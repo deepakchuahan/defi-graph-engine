@@ -6,6 +6,7 @@ graph_engine: \
   CMakeFiles/graph_engine.dir/src/ArenaAllocator.cpp.o \
   CMakeFiles/graph_engine.dir/src/Graph.cpp.o \
   CMakeFiles/graph_engine.dir/src/Solver.cpp.o \
+  CMakeFiles/graph_engine.dir/src/Parser.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -48,6 +49,8 @@ CMakeFiles/graph_engine.dir/src/ArenaAllocator.cpp.o:
 CMakeFiles/graph_engine.dir/src/Graph.cpp.o:
 
 CMakeFiles/graph_engine.dir/src/Solver.cpp.o:
+
+CMakeFiles/graph_engine.dir/src/Parser.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 
